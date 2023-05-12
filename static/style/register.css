@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#content-wrapper {
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+  flex-direction: column;
+  width: 30%;
+}
+
+form .text-input {
+  border-style: solid;
+}
+
+#iusername-symbol {
+  border-top-left-radius: 10px;
+}
+#ipassword-symbol {
+  border-bottom-left-radius: 10px;
+}
+#iusername {
+  border-top-right-radius: 10px;
+}
+#ipassword {
+  border-bottom-right-radius: 10px;
+}
+
+form span {
+  border: 1px solid #C6B9C0;
+}
+#isubmit {
+  width: 50%;
+  margin: 0.4rem 25%;
+  background-color: #45503B;
+  color: white;
+  height: 2rem;
+  border-radius: 2rem;
+}
+
+.form-row-wrapper {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.text-input {
+  margin: 0;
+  padding: 5px;
+  width: calc(100% - 46px);
+}
+
+.material-symbols-outlined {
+  background-color: #DBD9DB;
+  margin: 0;
+  padding: 0;
+  line-height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+}

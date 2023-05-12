@@ -4,4 +4,4 @@ Flask_SocketIO
 python-socketio
 python-engineio
 eventlet
-flask-sqlachemy
+Flask-SQLAlchemy

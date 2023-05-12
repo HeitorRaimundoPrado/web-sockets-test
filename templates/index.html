@@ -1,19 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-  <meta charset="UTF-8">
-  <title>WebSocket</title>
-  </head>
-  <body>
-    <h1>This is webSocket client</h1>
-    <ul>
-    {% for room in rooms %}
-
-    <li><a href="{{ url_for('room', id=room) }}">Room {{ room }}</a></li>
-    {% endfor %}
-    </ul>
-    <form method="POST">
-      <input type="submit" name="bcreateroom" value="Create New Room">
-    </form>
-  </body>
-  </html
+{% extends 'base.html' %}
+{% block content %}
+  <h1>This is webSocket client</h1>
+  <ul>
+  {% for room in rooms %}
+    <li><a href="{{ url_for('room.room', id=room) }}">Room {{ room }}</a></li>
+  {% endfor %}
+  </ul>
+  <form method="POST">
+    <input type="submit" name="bcreateroom" value="Create New Room">
+  </form>
+{% endblock %}

@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: rows;
+  width: 50%;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: rows;
+  background-color: #E5EBEA;
+}

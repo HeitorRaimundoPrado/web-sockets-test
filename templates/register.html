@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block style_imports %}
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style/register.css')}}">
+{% endblock %}
+
+{% block content %}
+<div id="content-wrapper">
+  <form method="POST">
+    <div id="username-wrapper" class="form-row-wrapper">
+      <span class="material-symbols-outlined" id="iusername-symbol"> person </span>
+      <input type="text" name="busername" id="iusername" class="text-input">
+    </div>
+    <div id="email-wrapper" class="form-row-wrapper">
+      <span class="material-symbols-outlined"> mail </span>
+      <input type="email" name="bemail" id="iemail" class="text-input">
+    </div>
+    <div id="password-wrapper" class="form-row-wrapper" class="text-input">
+      <span class="material-symbols-outlined" id="ipassword-symbol"> lock </span>
+      <input type="password" name="bpassword" id="ipassword" class="text-input">
+    </div>
+    <input type="submit" value="Register" id="isubmit">
+  </form>
+</div>
+{% endblock %}
