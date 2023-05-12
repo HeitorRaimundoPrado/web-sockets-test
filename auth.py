@@ -1,6 +1,7 @@
 from flask import Blueprint, render_template, request, redirect, url_for, flash
 from werkzeug.security import generate_password_hash, check_password_hash
 from models import User
+from flask_login import login_user
 from __init__ import db
 
 bp = Blueprint('auth', __name__)
@@ -8,7 +9,22 @@ bp = Blueprint('auth', __name__)
 @bp.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == "POST":
-        return redirect(url_for('main.home'))
+        email = request.form.get('bemail')
+        password = request.form.get('bpassword')
+
+        user = User.query.filter_by(email=email).first()
+
+        if email is None or password is None:
+            flash('Fill all information!')
+            return redirect(request.url)
+
+        if not user or not check_password_hash(user.password, password):
+            flash('Email or password wrong')
+            return redirect(request.url)
+
+        login_user(user)
+
+        return redirect(url_for('main.index'))
 
     else:
         return render_template('login.html')

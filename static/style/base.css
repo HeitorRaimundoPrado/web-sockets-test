@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-ul {
+nav ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -22,7 +22,7 @@ nav {
   flex-direction: rows;
   background-color: #E5EBEA;
   height: 20px;
-  padding: 0.3rem;
+  padding: 0.5rem;
 }
 
 #content-wrapper {
