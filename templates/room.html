@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.socket.io/4.4.1/socket.io.min.js"></script>
+    <script>
+      var user_id = {{ user_id }};
+      var room_id = {{ id }}
+    </script>
+    <script src="{{ url_for('static', filename='/script/room.js') }}"></script>
+  </head>
+  <body>
+    <div id='messages'>
+
+    </div>
+    <form id="sendmsg">
+      <input type="text" id="imsginput" name=bmsg" placeholder="message" >
+      <input type="submit" name="bsubmit" value="Send">
+    </form>
+  </body>
+</html>

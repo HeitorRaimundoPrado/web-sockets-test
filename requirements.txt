@@ -1,0 +1,7 @@
+Flask
+Flask-Login
+Flask_SocketIO
+python-socketio
+python-engineio
+eventlet
+flask-sqlachemy
