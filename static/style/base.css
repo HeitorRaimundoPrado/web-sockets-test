@@ -1,4 +1,4 @@
-body {
+* {
   margin: 0;
   padding: 0;
 }
@@ -21,4 +21,10 @@ nav {
   align-items: start;
   flex-direction: rows;
   background-color: #E5EBEA;
+  height: 20px;
+  padding: 0.3rem;
+}
+
+#content-wrapper {
+  height: calc(100vh - 25px);
 }

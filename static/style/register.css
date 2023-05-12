@@ -4,9 +4,10 @@
 }
 #content-wrapper {
   display: flex;
-  height: 90vh;
+  /* height: 40vh; */
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 form {
@@ -67,4 +68,9 @@ form span {
   width: 40px;
   display: flex;
   justify-content: center;
+}
+
+.flashes {
+  color: red;
+  display: flex;
 }

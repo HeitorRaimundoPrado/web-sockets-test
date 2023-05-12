@@ -16,10 +16,19 @@ socket_ = SocketIO()
 
 def create_app(debug=False):
     app = Flask(__name__)
+
     app.config['SECRET_KEY'] = 'SECRET'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
+
     app.debug = debug
 
     socket_.init_app(app)
+
+    import models
+
+    db.init_app(app)
+    with app.app_context():
+        db.create_all()
 
 
     import main
