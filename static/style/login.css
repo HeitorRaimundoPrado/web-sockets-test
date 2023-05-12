@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -74,4 +73,8 @@ form span {
 .flashes {
   color: red;
   display: flex;
+}
+
+ul {
+  list-style: none;
 }

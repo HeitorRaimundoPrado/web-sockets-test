@@ -1,12 +1,16 @@
 {% extends 'base.html' %}
+
+{% block style_imports %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style/room.css')}} ">
+{% endblock %}
 {% block script_imports %}
   <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script src="https://cdn.socket.io/4.4.1/socket.io.min.js"></script>
+  <script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
   <script>
     var room_id = {{ id }}
+    var user_id = {{ user_id }}
   </script>
-  <script src="{{ url_for('static', filename='/script/room.js') }}"></script>
-
+  <script src="{{ url_for('static', filename='script/room.js') }}"></script>
 {% endblock %}
 
 {% block content %}
@@ -14,7 +18,7 @@
 
   </div>
   <form id="sendmsg">
-    <input type="text" id="imsginput" name=bmsg" placeholder="message" >
+    <input type="text" id="imsginput" name="bmsg" placeholder="message" >
     <input type="submit" name="bsubmit" value="Send">
   </form>
   <p> {{ user_id }}</p>
