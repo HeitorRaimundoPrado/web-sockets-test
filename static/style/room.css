@@ -32,5 +32,45 @@
 
 #content-wrapper {
   display: flex;
-  height: 100vh;
+  justify-content: center;
+  height: calc(100vh - 45px);
+}
+#messages {
+  width: 100vw;
+  overflow: scroll;
+  height: 90%;
+}
+
+#messages::-webkit-scrollbar {
+  display: none;
+}
+
+#messages {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+form {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 0;
+}
+
+#imsginput {
+  width: 60vw;
+  margin: 1rem;
+  height: 24px;
+  border-radius: 3px;
+  border-style: solid;
+  padding: 0.3rem;
+}
+
+#isubmit {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border-style: solid;
+  background-color: #4998D4;
+  color: white;
 }

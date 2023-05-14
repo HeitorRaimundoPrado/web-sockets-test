@@ -24,6 +24,7 @@ nav {
   height: 20px;
   padding: 0.5rem;
   margin-bottom: 5px;
+  border-bottom: 1px solid #C6B9C0;
 }
 
 #content-wrapper {

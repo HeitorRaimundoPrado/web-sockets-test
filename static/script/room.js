@@ -16,6 +16,7 @@ $(document).ready(function() {
     }
     msgDiv.insertAdjacentHTML('beforeend', '<div class="msg-wrapper"><p class="msg ' + cls + '"/>' + msg.data + '</p></div>')
     // alert('getting callback')
+    $("#messages").scrollTop(function () {return this.scrollHeight;});
 
   })
 
@@ -26,6 +27,7 @@ $(document).ready(function() {
     // alert('test')
     textInput = document.getElementById('imsginput')
     textInput.value = '';
+    $("#messages").scrollTop(function () {return this.scrollHeight;});
     return false;
   }) 
 
