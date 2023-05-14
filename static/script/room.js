@@ -14,7 +14,7 @@ $(document).ready(function() {
     } else {
       cls = 'other-user';
     }
-    msgDiv.insertAdjacentHTML('beforeend', '<p class="' + cls + '"/>' + msg.data + '</p>')
+    msgDiv.insertAdjacentHTML('beforeend', '<div class="msg-wrapper"><p class="msg ' + cls + '"/>' + msg.data + '</p></div>')
     // alert('getting callback')
 
   })

@@ -1,4 +1,36 @@
-.this-user {
-  background-color: #2E83C4;
+/* .messages { */
+/*   position: relative; */
+/* } */
+.other-user {
+  border: 1px solid black;
+  left: 0;
+  margin-left: 5px;
 }
 
+.msg-wrapper {
+  height: 45px;
+  width: 100%;
+  /* overflow: auto; */
+  position: relative;
+}
+.msg {
+  display: flex;
+  border-radius: 0.5rem;
+  padding: 8px;
+  height: 20px;
+  width: 30%;
+  position: absolute;
+}
+
+.this-user {
+  background-color: #2E83C4;
+  border: 1px solid #C6B9C0;
+  color: white;
+  right: 0;
+  margin-right: 5px;
+}
+
+#content-wrapper {
+  display: flex;
+  height: 100vh;
+}
