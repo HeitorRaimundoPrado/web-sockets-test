@@ -8,7 +8,7 @@ nav ul {
   display: flex;
   justify-content: space-between;
   flex-direction: rows;
-  width: 50%;
+  width: 100%;
 }
 
 a {
@@ -29,4 +29,19 @@ nav {
 
 #content-wrapper {
   height: calc(100vh - 25px);
+}
+
+#auth-links {
+  display: flex;
+  width: 50%;
+  justify-content: right;
+  padding-right: 0.3rem;
+}
+#auth-links li {
+  margin-left: 0.6rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }

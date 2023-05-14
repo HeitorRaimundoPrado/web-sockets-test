@@ -1,0 +1,32 @@
+#main-title {
+  margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: fit-content;
+}
+
+#choose-room {
+  margin-left: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+#room-button {
+  border: 1px solid #747572;
+  width: 108px;
+  display: inline-block;
+  border-radius: 8px;
+  padding: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+#isubmit {
+  border-radius: 8px;
+  padding: 0.2rem;
+  border-style: solid;
+  background-color: #4998D4;
+  color: white;
+  border-color: #2B79B6;
+}

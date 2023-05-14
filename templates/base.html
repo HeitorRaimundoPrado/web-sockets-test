@@ -14,9 +14,14 @@
     <nav>
       <ul>
         <li> <a href="{{ url_for('main.index')}}">Home</a></li>
-        <li> <a href="{{ url_for('auth.login')}}">Login</a></li>
-        <li> <a href="{{ url_for('auth.register')}}">Register</a></li>
-        <li> <a href="{{ url_for('auth.logout') }}">Logout</a></li>
+        <div id="auth-links">
+          {% if current_user.is_authenticated %}
+            <li> <a href="{{ url_for('auth.logout') }}">Logout</a></li>
+          {% else %}
+            <li> <a href="{{ url_for('auth.login')}}">Login</a></li>
+            <li> <a href="{{ url_for('auth.register')}}">Register</a></li>
+          {% endif %}
+        </div>
       </ul>
     </nav>
     {% block content %}
